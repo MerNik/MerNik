@@ -1,0 +1,162 @@
+.hero {
+  background-image: url('../img/bg/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.logo {
+  flex-shrink: 0;
+  display: block;
+  width: 100px;
+  height: 80px;
+  position: relative;
+  z-index: 100;
+}
+
+.logo__img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.header__menu {
+  margin-left: auto;
+  @include tablets {
+    display: none;
+  }
+}
+
+.nav__list {
+  text-align: right;
+  font-size: 0;
+  white-space: nowrap;
+}
+
+.nav__item {
+  display: inline-flex;
+  align-items: center;
+  &:after {
+    display: block;
+    content: '';
+    @include circle(rem(5px),
+            #fff);
+    margin: 0 rem(12px);
+  }
+  &:last-child:after {
+    display: none;
+  }
+}
+
+.nav__link {
+  color: #ffffff;
+  font-size: rem(13px);
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: .3s;
+  &:hover {
+    color: $yellow;
+  }
+}
+
+.header__order {
+  margin-left: rem(15px);
+  display: flex;
+  justify-content: flex-end;
+  @include tablets {
+    flex: 1;
+  }
+}
+
+
+
+
+
+.hero_content-wrap {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex: 1;
+}
+
+.hero__content {
+  display: flex;
+  align-items: center;
+  padding-bottom: rem(100px);
+  @include tablets {
+    display: block;
+    padding-bottom: 0;
+    margin: 0 auto;
+  }
+
+}
+
+.hero__img,
+.hero__description {
+  width: 50%;
+  transition: .5s;
+  @include tablets {
+    width: rem(400px);
+  }
+  @include phones {
+    width: rem(380px);
+  }
+  @include small {
+    width: rem(360px);
+  }
+}
+
+
+.hero__img-pic {
+  max-width: 100%;
+}
+
+.hero__description {
+  display: flex;
+  padding-top: rem(35px);
+  flex-direction: column;
+  @include tablets {
+    padding-top: 0;
+  }
+}
+
+.section__title {
+
+  white-space: nowrap;
+  text-align: left;
+  color: #f9b43b;
+  font-family: 'Gagalin';
+  font-size: rem(72px);
+  @include tablets {
+    line-height: 1;
+    text-align: center;
+    font-size: rem(62px);
+  }
+}
+
+.hero__description-text {
+  color: #ffffff;
+  text-align: left;
+  font-family: 'Lifehack';
+  font-size: rem(65px);
+  line-height: 1;
+  @include tablets {
+    text-align: center;
+    font-size: rem(55px);
+  }
+}
+
+.arrow-down {
+  display: block;
+  padding-bottom: rem(40px);
+}

@@ -1,0 +1,33 @@
+//colors
+$orange: #e25028;
+$yellow: #f8b43a;
+$green: #8ac03e;
+$dark: #2f3234;
+
+//resolutions
+$tablets: 768px;
+$phones: 480px;
+
+
+//media
+@import "./config/media";
+
+//config
+@import "./config/variables";
+@import "./config/mixins";
+
+//base
+@import "./layout/fonts";
+@import "./layout/layout";
+@import "./layout/common";
+
+//sections
+@import "./section/hero";
+@import "./section/best";
+@import "./section/reviews";
+@import "./section/team";
+@import "./section/menu";
+@import "./section/order";
+@import "./section/contacts";
+@import "./section/burgers";
+@import "./section/hamburger-menu";

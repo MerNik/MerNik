@@ -1,0 +1,42 @@
+//media
+@mixin tablets {
+  @media screen and (max-width: $tablets) {
+    @content;
+  }
+}
+
+@mixin phones {
+  @media screen and (max-width: $phones) {
+    @content;
+  }
+}
+// @mixin big {
+//   @media screen and (max-width: 1260px) {
+//     @content;
+//   }
+// }
+@mixin large {
+  @media screen and (max-width: 1110px) {
+    @content;
+  }
+}
+// @mixin great {
+//   @media screen and (max-width: 860px) {
+//     @content;
+//   }
+// }
+@mixin middle {
+  @media screen and (max-width: 380px) {
+    @content;
+  }
+}
+@mixin small {
+  @media screen and (max-width: 365px) {
+    @content;
+  }
+}
+@mixin little {
+  @media screen and (max-width: 320px) {
+    @content;
+  }
+}
