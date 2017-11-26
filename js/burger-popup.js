@@ -48,68 +48,7 @@ $('.arrow').click(function(e){
 };
 slider();*/
 
-/*$(document).ready(function(){
-    //Скрыть PopUp при загрузке страницы
-    PopUpHide();
-});
-//Функция отображения PopUp
-function PopUpShow(){
-    $("#popup1").show();
+var btn = document.getElementById("my1");
+btn.onclick = function(){
+    $("#my1").next(".modal").css("display","block");
 }
-//Функция скрытия PopUp
-function PopUpHide(){
-    $("#popup1").hide();
-}
-
-$(document).ready(function() {
-    $(".comment__button").click(function(){
-        $(".b-pop").addClass("open");
-    })
-});*/
-
-//Модальное окно
-
-$('body').on('click', '.trigger', function(e){
-    e.preventDefault();
-    $('#'+$(this).attr('data-id')).modal().open();
-});
-/*
-var showFullReview = function() {
-    // открытие модального окна
-    $('.reviews__link').click(function(e) {
-        e.preventDefault();
-        var container = $(this).closest('.reviews__info'),
-            name = container.children('.reviews__name').text(),
-            comment = container.children('.reviews__text').text();
-        showModal = function() {
-            $('.modalReview__title').text(name);
-            $('.modalReview__content').text(comment);
-        }
-        showModal();
-
-
-        $('.modalReview').removeClass('visuallyHidden');
-        $('.navigation__dots').css('z-index', '-1');
-        scrollControl(false);
-        if (!$('.modalReview').hasClass('visuallyHidden')) {
-            //закрытие окна модалки при клике на крестик
-            $('.modalReview__close').click(function(e){
-                e.preventDefault()
-                $('.modalReview').addClass('visuallyHidden');
-                scrollControl(true);
-                $('.navigation__dots').css('z-index', '3');
-            });
-            // закрыие окна модалки при клике вне области
-            $('.modalReview').click(function(e){
-                if ($('.modalReview__container').has(e.target).length === 0) {
-                    $('.modalReview').addClass('visuallyHidden');
-                    scrollControl(true);
-                    $('.navigation__dots').css('z-index', '3');
-                }
-            });
-        };
-
-    });
-};
-showFullReview();
-*/
