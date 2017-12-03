@@ -17,7 +17,7 @@
 <body>
 <div class="wrapper">
     <div class="maincontent">
-        <section class="section hero">
+        <section class="section hero" id="head">
             <div class="container">
                 <header class="header">
                     <div class="header__logo">
@@ -29,22 +29,22 @@
                         <nav class="nav">
                              <ul class="nav__list">
                                  <li class="nav__item">
-                                     <a href="#" class="nav__link" data-scroll-to="1">о нас</a>
+                                     <a href="#head" class="nav__link" data-scroll-to="1">о нас</a>
                                  </li>
                                  <li class="nav__item">
-                                     <a href="#best" class="nav__link" data-scroll-to="2">бургеры</a>
+                                     <a href="#burg" class="nav__link" data-scroll-to="2">бургеры</a>
                                  </li>
                                  <li class="nav__item">
-                                     <a href="#burg" class="nav__link" data-scroll-to="3">команда</a>
+                                     <a href="#team" class="nav__link" data-scroll-to="3">команда</a>
                                  </li>
                                  <li class="nav__item">
-                                     <a href="#team" class="nav__link" data-scroll-to="4">меню</a>
+                                     <a href="#menu" class="nav__link" data-scroll-to="4">меню</a>
                                  </li>
                                  <li class="nav__item">
-                                     <a href="#menu" class="nav__link" data-scroll-to="5">отзывы</a>
+                                     <a href="#rev" class="nav__link" data-scroll-to="5">отзывы</a>
                                  </li>
                                  <li class="nav__item">
-                                     <a href="#" class="nav__link" data-scroll-to="6">контакты</a>
+                                     <a href="#con" class="nav__link" data-scroll-to="6">контакты</a>
                                  </li>
                             </ul>
                         </nav>
@@ -345,7 +345,7 @@
                 </li>
             </ul>
         </section>
-        <section class="section reviews">
+        <section class="section reviews" id="rev">
             <ul class="reviews__list">
                 <li class="reviews__item" style="background-image: url(./img/content/reviews/1.jpg)">
                     <div class="comment">
@@ -354,12 +354,11 @@
                             <div class="reviews__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал,
                                 что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
 
-                            <button class="reviews__link" id="my1">подробнее</button>
-
+                            <a href="#modal" class="button openModal">Открыть модальное окно</a>
                         </div>
                     </div>
-                    <div class="modal" id="mc1">
-                        <span class="close">&times;</span>
+                    <div id="modal" class="modal">
+                        <a href="#close" title="Закрыть">Закрыть</a>
                         <div class="reviews__name">Константин Спилберг</div>
                         <div class="reviews__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал,
                             что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
@@ -493,7 +492,7 @@
                     что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
             </div>
         </section>
-        <section class="section order">
+        <section class="section order"id="ord" >
             <div class="container">
                 <h1 class="section__title section__title_order">закажите доставку</h1>
                 <div class="form">
@@ -573,7 +572,7 @@
                 </div>
             </div>
         </section>
-        <section class="section contacts">
+        <section class="section contacts" id="con">
             <div class="ymap" id="map"></div>
              <footer class="footer">
                 <div class="footer__container">
@@ -622,28 +621,28 @@
     </div>
     <ul class="fixed-menu">
         <li class="fixed-menu__item">
-            <a href="#" class="fixed-menu__link" data-scroll-to="1"></a>
+            <a href="#head" class="fixed-menu__link" data-scroll-to="1"></a>
         </li>
         <li class="fixed-menu__item">
             <a href="#best" class="fixed-menu__link" data-scroll-to="2"></a>
         </li>
         <li class="fixed-menu__item">
-            <a href="#" class="fixed-menu__link" data-scroll-to="3"></a>
+            <a href="#burg" class="fixed-menu__link" data-scroll-to="3"></a>
         </li>
         <li class="fixed-menu__item">
-            <a href="#" class="fixed-menu__link" data-scroll-to="4"></a>
+            <a href="#team" class="fixed-menu__link" data-scroll-to="4"></a>
         </li>
         <li class="fixed-menu__item">
-            <a href="#" class="fixed-menu__link" data-scroll-to="5"></a>
+            <a href="#menu" class="fixed-menu__link" data-scroll-to="5"></a>
         </li>
         <li class="fixed-menu__item">
-            <a href="#" class="fixed-menu__link" data-scroll-to="6"></a>
+            <a href="#rev" class="fixed-menu__link" data-scroll-to="6"></a>
         </li>
         <li class="fixed-menu__item">
-            <a href="#" class="fixed-menu__link" data-scroll-to="7"></a>
+            <a href="#ord" class="fixed-menu__link" data-scroll-to="7"></a>
         </li>
         <li class="fixed-menu__item">
-            <a href="#" class="fixed-menu__link" data-scroll-to="8"></a>
+            <a href="#con" class="fixed-menu__link" data-scroll-to="8"></a>
         </li>
     </ul>
 </div>
@@ -652,22 +651,22 @@
     <nav class="overlay-menu">
         <ul class="overlay-menu__list">
             <li class="overlay-menu__item">
-                <a class="overlay-menu__link" href="#">о нас</a>
+                <a class="overlay-menu__link" href="#head">о нас</a>
             </li>
             <li class="overlay-menu__item">
-                <a class="overlay-menu__link" href="#">бургеры</a>
+                <a class="overlay-menu__link" href="#burg">бургеры</a>
             </li>
             <li class="overlay-menu__item">
-                <a class="overlay-menu__link" href="#">команда</a>
+                <a class="overlay-menu__link" href="#team">команда</a>
             </li>
             <li class="overlay-menu__item">
-                <a class="overlay-menu__link" href="#">меню</a>
+                <a class="overlay-menu__link" href="#menu">меню</a>
             </li>
             <li class="overlay-menu__item">
-                <a class="overlay-menu__link" href="#">отзывы</a>
+                <a class="overlay-menu__link" href="#rev">отзывы</a>
             </li>
             <li class="overlay-menu__item">
-                <a class="overlay-menu__link" href="#">контакты</a>
+                <a class="overlay-menu__link" href="#ord">контакты</a>
             </li>
         </ul>
     </nav>
@@ -679,7 +678,7 @@
 <script src="js/lib/jquery.min.js"></script>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 <script src="./js/yandexMap.js"></script>
-<script src="./js/jquery.the-modal.js"></script>
+
 <script src="./css/the-modal.css"></script>
 </body>
 
